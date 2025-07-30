@@ -2,67 +2,127 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to Herakon Labs</title>
-  <meta name="description" content="Herakon Labs is an innovation-driven technology lab building solutions for tomorrow.">
-  <meta name="keywords" content="Herakon Labs, technology, innovation, research, software, AI, startup">
-  <meta name="author" content="Herakon Labs">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Open Graph -->
+  <meta name="description" content="Herakon Labs is a visionary R&D lab engineering scalable, human-centered digital and embedded systems for Africa and beyond.">
+  <meta name="keywords" content="Herakon Labs, Innovation, Africa, R&D, Digital Products, Embedded Systems, Technology Lab">
+  <meta name="author" content="Herakon Labs">
   <meta property="og:title" content="Herakon Labs">
-  <meta property="og:description" content="Building solutions for the future.">
+  <meta property="og:description" content="Engineering scalable digital and embedded innovations across Africa.">
   <meta property="og:url" content="https://herakon-labs.github.io">
   <meta property="og:type" content="website">
 
+  <title>Welcome to Herakon Labs</title>
+
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Inter', sans-serif;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: #ffffff;
+      overflow-x: hidden;
+    }
+    header {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       text-align: center;
-      padding: 1rem;
+      flex-direction: column;
     }
-
-    h1 {
+    h1.typing {
       font-size: 2.5rem;
-      margin: 0;
+      border-right: 2px solid white;
       white-space: nowrap;
       overflow: hidden;
-      border-right: 2px solid #fff;
       width: 0;
       animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
     }
-
-    p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-      max-width: 600px;
-    }
-
     @keyframes typing {
       from { width: 0; }
       to { width: 100%; }
     }
-
     @keyframes blink {
       from, to { border-color: transparent; }
-      50% { border-color: #fff; }
+      50% { border-color: white; }
     }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 1.8rem; }
-      p { font-size: 1rem; }
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeUp 1s ease-out;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      margin-bottom: 1rem;
+      color: #00C087;
+    }
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1c1c1c;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: #00C087;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Herakon Labs</h1>
-  <p>We're building innovative solutions for tomorrow. Stay tuned.</p>
+  <header>
+    <h1 class="typing">Welcome to Herakon Labs</h1>
+    <p>Engineering innovation across digital and embedded frontiers.</p>
+  </header>
+
+  <section>
+    <h2>About Herakon Labs</h2>
+    <p>Herakon Labs is a visionary Research and Development (R&D) hub focused on engineering scalable, human-centered digital products and embedded systems. From smart software platforms to custom hardware prototypes, Herakon Labs transforms research into real-world impact.</p>
+    <p>The name "Herakon" blends the mythological strength of Hercules with systems thinking — evoking a tech powerhouse tackling Africa’s most pressing challenges with courage and insight.</p>
+  </section>
+
+  <section>
+    <h2>Vision & Mission</h2>
+    <p><strong>Vision:</strong> To become Africa’s leading research-driven innovation lab, building transformative technologies that empower systems and lives.</p>
+    <p><strong>Mission:</strong> Build world-class solutions for African and global needs. Incubate ideas into products. Empower communities through collaboration, education, and digital transformation.</p>
+  </section>
+
+  <section>
+    <h2>Sub-Brands & Initiatives</h2>
+    <ul>
+      <li>Herakon Digital – SaaS & mobile/web platforms</li>
+      <li>Herakon Embedded – IoT & hardware prototypes</li>
+      <li>Herakon X – experimental and moonshot ideas</li>
+      <li>Herakon Ventures – startup studio & incubation</li>
+      <li>Herakon Talent – bootcamps, mentorship & training</li>
+      <li>Herakon Impact – social innovation & SDG projects</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Our Design Ethos</h2>
+    <p>At Herakon Labs, we value human-centered, intuitive, and locally relevant designs — while maintaining global standards. Our products reflect simplicity, impact, community, and a forward-looking approach to innovation.</p>
+  </section>
+
+  <footer>
+    <div class="social-links">
+      <p>🔗 Follow us:</p>
+      <a href="https://x.com/herakonlabs" target="_blank">Twitter (X)</a>
+      <a href="https://instagram.com/herakonlabs" target="_blank">Instagram</a>
+      <a href="mailto:herakonlab@gmail.com">Email</a>
+      <!-- Facebook & LinkedIn coming soon -->
+    </div>
+    <p style="margin-top:1rem; font-size: 0.9rem; color: #ccc;">© 2025 Herakon Labs — Powered by innovation</p>
+  </footer>
 </body>
 </html>
